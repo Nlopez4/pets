@@ -1,8 +1,12 @@
 import './App.css';
+import Search from './Search';
 
 function App() {
   return (
-    <h1>Pets</h1>
+    <div>
+      <h1>Avaliable Pets</h1>
+      <Search />
+    </div>
   );
 }
 
