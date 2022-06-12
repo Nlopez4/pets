@@ -1,10 +1,10 @@
-import './App.scss';
-import Search from './Search';
+import './styles/App.scss';
+import Search from './components/Search';
 
 function App() {
   return (
     <div>
-      <h1>Avaliable Pets</h1>
+      <h1 className="pet-heading">Avaliable Pets</h1>
       <Search />
     </div>
   );

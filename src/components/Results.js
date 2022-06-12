@@ -1,4 +1,4 @@
-import Pet from './Pet';
+import Pet from '../components/Pet';
 
 function Results({pets}) {
     return (
