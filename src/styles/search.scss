@@ -1,28 +1,40 @@
+@use './index.scss';
+
 .search-div {
     display: flex;
     align-content: center;
     justify-content: center;
+    padding: 20px;
 }
 
 .search-form {
-    width: 300px;
+    width: 400px;
     display: inline-block;
     height: 200px;
-    border: 5px solid black;
+    border: 5px solid #f8efad;
+    border-radius: 10px;
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 20px;
+    background-color: #f1c176;
 }
 
 label {
     padding: 5px;
+    background-color: #f1c176;
+    color: white;
+    font-family: index.$second-font;
+    font-size: clamp(.8rem, 1.2vw, 2.0rem);
 }
 
 select {
-    width: 250px;
+    width: 350px;
     padding: 5px;
     border-radius: 10px;
+    background-color: #f1c176;
+    color: white;
 }
 
 .animal-div, .breed-div {
     margin-bottom: 20px;
+    background-color: #f1c176;
 }
