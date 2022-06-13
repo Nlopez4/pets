@@ -1,0 +1,19 @@
+@use './index.scss';
+
+header {
+    height: 100px;
+    border-bottom: 3px solid #f1c176;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+
+}
+
+.header-name, .header-location, .header-number {
+    font-family: index.$main-font;
+    color: #ef7d66;
+    font-size: clamp(2.0rem, 1.5vw, 3.5rem);
+}
+
+
