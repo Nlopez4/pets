@@ -1,6 +1,9 @@
+@use './index.scss';
+
 .pet-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -12,6 +15,29 @@
     align-items: center;
 }
 
+
+a {
+    text-decoration: none;
+}
+
 img {
-    width: 200px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.info {
+    width: 300px;
+    height: 200px;
+}
+
+.pet-name {
+    font-family: index.$main-font;
+    font-size: clamp(1.5rem, 2.5vw, 4.5rem);
+    color: #ef7d66;
+}
+
+.pet-info {
+    font-family: index.$second-font;
+    font-size: clamp(.8rem, 1.2vw, 2.0rem);
+    color: #ef7d66;
 }

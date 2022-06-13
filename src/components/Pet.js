@@ -14,8 +14,8 @@ function Pet({ name, animal, breed, images, location, id }) {
                 <img src={hero} alt={name} />
             </div>
             <div className="info">
-                <h1>{name}</h1>
-                <h2>{`${animal} — ${breed} — ${location}`}</h2>
+                <h1 className="pet-name">{name}</h1>
+                <h2 className="pet-info">{`${animal} — ${breed} — ${location}`}</h2>
             </div>
             </a>
         </div>
