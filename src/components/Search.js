@@ -8,7 +8,6 @@ const ANIMALS = ['bird', 'cat', 'dog', 'rabit', 'reptile'];
 
 function Search() {
     // order of state matters, as each piece gets a different state
-    const [location, setLocation] = useState('');
     const [animal, setAnimal] = useState('');
     const [breed, setBreed] = useState('');
     const [breeds] = useBreedList(animal);
@@ -19,7 +18,7 @@ function Search() {
     }, []); // render once
 
     async function requestPets() {
-        const res = await fetch(`http://pets-v2.dev-apis.com/pets?animal=${animal}&location=${location}&breed=${breed}`);
+        const res = await fetch(`http://pets-v2.dev-apis.com/pets?animal=${animal}&breed=${breed}`);
         const json = await res.json();
         setPets(json.pets);
     }
@@ -30,15 +29,6 @@ function Search() {
                 e.preventDefault(); // to prevent form from submitting to itself
                 requestPets();
             }}>
-                <label htmlFor='location'>
-                    Location
-                    <input 
-                    id='location' 
-                    value={location} 
-                    placeholder='location' 
-                    onChange={(e) => setLocation(e.target.value)}
-                    />
-                </label>
                 <label htmlFor="animal">
                 Animal
                 <select
