@@ -1,0 +1,12 @@
+@use './index.scss';
+
+.no-pets {
+    font-family: index.$main-font;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #ef7d66;
+    font-size: clamp(2.0rem, 5.5vw, 6.5rem);
+}
