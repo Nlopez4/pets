@@ -8,7 +8,7 @@ function Pet({ name, animal, breed, images, location, id }) {
     }
 
     return (
-        <div className="pets-container">
+        <div className="pet-container">
             <a href={`/details/${id}`} className="pet">
             <div className="image-container">
                 <img src={hero} alt={name} />
