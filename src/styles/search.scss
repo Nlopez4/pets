@@ -10,31 +10,50 @@
 .search-form {
     width: 400px;
     display: inline-block;
-    height: 200px;
+    height: 250px;
     border: 5px solid #f8efad;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     padding: 20px;
     background-color: #f1c176;
 }
 
 label {
-    padding: 5px;
     background-color: #f1c176;
     color: white;
     font-family: index.$second-font;
     font-size: clamp(.8rem, 1.2vw, 2.0rem);
+    padding: 5px 10px;
 }
 
 select {
     width: 350px;
     padding: 5px;
+    margin-bottom: 10px;
     border-radius: 10px;
     background-color: #f1c176;
     color: white;
+    border: 2px solid white;
 }
 
 .animal-div, .breed-div {
     margin-bottom: 20px;
     background-color: #f1c176;
+}
+
+.sub-div {
+    display: flex;
+    justify-content: center;
+    background-color: #f1c176;
+}
+
+.sub-btn {
+    width: 150px;
+    height: 30px;
+    background-color: #ef7d66;
+    color: white;
+    font-family: index.$second-font;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
 }
