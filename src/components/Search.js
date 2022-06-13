@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'; 
+import '../styles/search.scss';
 import Results from '../components/Results';
 import useBreedList from '../components/useBreedList';
 
@@ -25,7 +26,7 @@ function Search() {
 
     return (
         <div className='search'>
-            <form onSubmit={e => {
+            <form className='search-form' onSubmit={e => {
                 e.preventDefault(); // to prevent form from submitting to itself
                 requestPets();
             }}>

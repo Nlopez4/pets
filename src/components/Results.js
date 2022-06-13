@@ -1,8 +1,9 @@
 import Pet from '../components/Pet';
+import '../styles/results.scss';
 
 function Results({pets}) {
     return (
-        <div>
+        <div className="results-div">
             {!pets.length ? (
                 <h1>No Pets Found</h1>
                 ) : (

@@ -2,4 +2,8 @@
 
 .pet-heading {
   font-family: index.$main-font;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
