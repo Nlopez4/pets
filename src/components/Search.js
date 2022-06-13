@@ -32,7 +32,7 @@ function Search() {
                 }}>
                     <div className="animal-div">
                         <label htmlFor="animal">
-                        Animal
+                        ANIMAL
                         <select
                             id="animal"
                             value={animal}
@@ -56,7 +56,7 @@ function Search() {
                     </div>
                     <div className="breed-div">
                         <label htmlFor="breed">
-                            Breed
+                            BREED
                             <select
                                 disabled={!breeds.length}
                                 id="breed"
@@ -73,7 +73,9 @@ function Search() {
                             </select>
                             </label>
                         </div>
-                    <button>Submit</button>
+                        <div className="sub-div">
+                            <button className="sub-btn">SUBMIT</button>
+                        </div>
                 </form>
             </div>
             <Results pets={pets}/>
