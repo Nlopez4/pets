@@ -5,7 +5,7 @@ function Results({pets}) {
     return (
         <div className="results-div">
             {!pets.length ? (
-                <h1 className="no-pets">Sorry...No Pets Avaliable A This Time</h1>
+                <h1 className="no-pets">Sorry...No Pets Avaliable At This Time</h1>
                 ) : (
                     pets.map((pet) => (
                         <Pet 
